@@ -1,0 +1,225 @@
+Thread Pools (Executor Framework):
+
+Thread pools, also known as the Executor framework in Java, is a feature that allows you to manage and control thread execution in a concurrent Java application. It provides a way to create a pool of threads and reuse them, which is more efficient than creating a new thread for each task.
+
+The need for thread pools:
+
+Creating a new thread for each task in a concurrent application can be very costly, especially when the number of tasks is large. This is because creating a thread consumes time and resources. Moreover, when a large number of threads are running concurrently, it can lead to high CPU usage and memory consumption, which can degrade the performance of the application.
+
+To overcome these issues, we use thread pools. A thread pool creates a fixed number of threads at the start. These threads are reused to execute new tasks. This approach reduces the overhead of thread creation and resource usage.
+
+Here is a simple example of how to use a thread pool in Java:
+
+```java
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+class WorkerThread implements Runnable {
+    private String message;
+
+    public WorkerThread(String message){
+        this.message = message;
+    }
+
+    public void run() {
+        System.out.println(Thread.currentThread().getName() + " (Start) message = " + message);
+        processMessage();
+        System.out.println(Thread.currentThread().getName() + " (End)");
+    }
+
+    private void processMessage() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+public class ThreadPoolExample {
+    public static void main(String[] args) {
+        // creating a pool of 5 threads
+        ExecutorService executor = Executors.newFixedThreadPool(5);
+        for (int i = 0; i < 10; i++) {
+            Runnable worker = new WorkerThread("" + i);
+            executor.execute(worker);  // calling execute method of ExecutorService
+        }
+        executor.shutdown();
+        while (!executor.isTerminated()) {   }
+
+        System.out.println("Finished all threads");
+    }
+}
+```
+
+In this example, we create a pool of 5 threads using `Executors.newFixedThreadPool(5)`. We then submit 10 tasks to the executor. The executor executes these tasks with the 5 threads in the pool. Once all tasks are completed, we shut down the executor using `executor.shutdown()`.
+
+
+`Runnable` and `Callable` are both interfaces in Java that represent tasks which can be executed by multiple threads. However, there are some key differences between them:
+
+1. Return Value: `Runnable.run()` does not return a result. It is declared with a `void` return type. On the other hand, `Callable.call()` returns a result. The `Callable` interface is a generic interface, and the type of the return value is declared at the time it is declared.
+
+2. Exception Handling: `Runnable.run()` cannot throw any checked exceptions—only unchecked exceptions. In contrast, `Callable.call()` can throw checked as well as unchecked exceptions.
+
+3. Usage with the Executor Framework: `Runnable` tasks can be submitted to an `ExecutorService` and they return a `Future<?>` where `<?>` is always `Void`. `Callable` tasks, when submitted to an `ExecutorService`, return a `Future<V>` where `V` is the type of the value returned by `call()`.
+
+Here is an example of a `Runnable`:
+
+```java
+Runnable runnableTask = () -> {
+    System.out.println("Runnable task's execution");
+};
+new Thread(runnableTask).start();
+```
+
+And here is an example of a `Callable`:
+
+```java
+Callable<Integer> callableTask = () -> {
+    System.out.println("Callable task's execution");
+    return 123;
+};
+ExecutorService executorService = Executors.newFixedThreadPool(1);
+Future<Integer> future = executorService.submit(callableTask);
+```
+
+In the `Callable` example, you can get the result of the `call()` method using `future.get()`. This method blocks until the result is available.
+
+
+
+Sure, here's a more verbose example of using `Callable` and `Future` without using stream methods:
+
+```java
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.ExecutionException;
+
+class MyCallable implements Callable<Integer> {
+    @Override
+    public Integer call() throws Exception {
+        int sum = 0;
+        for (int i = 0; i < 100; i++) {
+            sum += i;
+        }
+        return sum;
+    }
+}
+
+public class CallableFutureExample {
+    public static void main(String[] args) {
+        // Create ExecutorService
+        ExecutorService executorService = Executors.newFixedThreadPool(1);
+
+        // Create Callable
+        Callable<Integer> callable = new MyCallable();
+
+        // Submit Callable and get Future
+        Future<Integer> future = executorService.submit(callable);
+
+        try {
+            // Get result from Future
+            Integer result = future.get();
+            System.out.println("Result from callable: " + result);
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
+
+        // Shutdown the ExecutorService
+        executorService.shutdown();
+    }
+}
+```
+
+In this example, we create a `Callable` task that calculates the sum of the first 100 numbers. We then submit this task to an `ExecutorService` and get a `Future`. We can then use the `Future.get()` method to retrieve the result of the `Callable` task.Certainly, here are some more detailed advantages of using `Callable` over `Runnable`:
+
+                                                                                                                                                                                                                                                            1. **Return Value**: One of the main advantages of `Callable` over `Runnable` is that `Callable` tasks can return a result. The `call()` method in the `Callable` interface returns a value, and the type of this return value can be specified as a generic parameter when the `Callable` is declared. This is a significant advantage over `Runnable`, as the `run()` method in the `Runnable` interface does not return a result. This means that if you need to perform a computation in a separate thread and obtain the result of this computation, you would need to use a `Callable`.
+
+                                                                                                                                                                                                                                                            2. **Exception Handling**: `Callable` tasks can throw checked exceptions in addition to unchecked exceptions. This is another advantage over `Runnable` tasks, which can only throw unchecked exceptions. This means that if your task needs to perform an operation that could throw a checked exception (for example, a file I/O operation), you would need to use a `Callable`. With a `Runnable`, you would need to catch the checked exception inside the `run()` method, which could make your error handling logic more complex.
+
+                                                                                                                                                                                                                                                            3. **Usage with the Executor Framework**: When you submit a `Runnable` task to an `ExecutorService`, the `submit()` method returns a `Future<?>`, where `<?>` is always `Void`. This is because `Runnable` tasks do not return a result. On the other hand, when you submit a `Callable` task to an `ExecutorService`, the `submit()` method returns a `Future<V>`, where `V` is the type of the value returned by the `call()` method. This `Future` can be used to retrieve the result of the `Callable` task once it has completed. This is a significant advantage if you need to perform a series of tasks in a separate thread and use the result of one task as the input to the next task.
+
+                                                                                                                                                                                                                                                            4. **Flexibility**: `Callable` provides more flexibility as it can return a result and throw an exception. This makes it a better choice for large-scale applications where you need more control over multithreading tasks.
+
+                                                                                                                                                                                                                                                            In summary, while `Runnable` is perfectly suitable for simple tasks that do not need to return a result or throw checked exceptions, `Callable` provides more flexibility and control, making it a better choice for more complex multithreading applications.
+
+
+
+
+
+
+`ThreadLocal` is a class in Java that provides thread-local variables. These variables differ from their normal counterparts in that each thread that accesses one (via its `get` or `set` method) has its own, independently initialized copy of the variable. `ThreadLocal` instances are typically private static fields in classes that wish to associate state with a thread (e.g., a user ID or transaction ID).
+
+Here are some key points about `ThreadLocal`:
+
+1. Each thread holds an implicit reference to its copy of a thread-local variable as long as the thread is alive and the `ThreadLocal` instance is accessible; after a thread goes away, all of its copies of thread-local instances are subject to garbage collection (unless other references to these copies exist).
+
+2. `ThreadLocal` is useful in scenarios where you have objects that are not thread-safe, but you still want to avoid synchronizing access to those objects. Instead, you can give each thread its own instance of the object.
+
+3. `ThreadLocal` can be associated with `Thread` scope. It's a way to achieve thread safety by having individual instances for each thread.
+
+Here is a simple example of how to use `ThreadLocal`:
+
+```java
+public class ThreadLocalExample {
+
+    // Create a ThreadLocal variable
+    private static ThreadLocal<String> threadLocalVar = new ThreadLocal<>();
+
+    public static void main(String[] args) {
+
+        // Set the ThreadLocal variable
+        threadLocalVar.set("Hello, world!");
+
+        // Create a new Thread that prints out the ThreadLocal variable
+        Thread thread = new Thread(() -> {
+            System.out.println("ThreadLocal variable from new thread: " + threadLocalVar.get());
+        });
+
+        thread.start();
+
+        // Print out the ThreadLocal variable from the main thread
+        System.out.println("ThreadLocal variable from main thread: " + threadLocalVar.get());
+    }
+}
+```
+
+In this example, we create a `ThreadLocal` variable and set a value in the main thread. We then create a new thread and try to access the `ThreadLocal` variable. The new thread doesn't see the value set by the main thread because it has its own, independently initialized copy of the `ThreadLocal` variable.
+
+
+
+
+-------------------------------------------------------------------------------------------
+
+
+`ThreadLocal` variables are not inherited by child threads from their parent threads in Java. Each thread has its own, independently initialized copy of the `ThreadLocal` variable. This means that if a thread sets a value on a `ThreadLocal` variable, that value is not visible to its child threads.
+
+However, Java provides a class called `InheritableThreadLocal` which is a subclass of `ThreadLocal`. `InheritableThreadLocal` is designed to provide thread-local values which will be inherited by any child threads created by the current thread.
+
+Here is an example to illustrate this:
+
+```java
+public class ThreadLocalInheritanceExample {
+
+    private static ThreadLocal<String> threadLocalVar = new ThreadLocal<>();
+    private static InheritableThreadLocal<String> inheritableThreadLocalVar = new InheritableThreadLocal<>();
+
+    public static void main(String[] args) {
+
+        // Set the ThreadLocal and InheritableThreadLocal variables
+        threadLocalVar.set("Hello from ThreadLocal");
+        inheritableThreadLocalVar.set("Hello from InheritableThreadLocal");
+
+        // Create a new Thread
+        Thread childThread = new Thread(() -> {
+            System.out.println("ThreadLocal variable from child thread: " + threadLocalVar.get());
+            System.out.println("InheritableThreadLocal variable from child thread: " + inheritableThreadLocalVar.get());
+        });
+
+        childThread.start();
+    }
+}
+```
+
+In this example, the main thread sets values on both a `ThreadLocal` and an `InheritableThreadLocal` variable. It then creates a child thread. The child thread tries to access both variables. The `ThreadLocal` variable is `null` in the child thread, because `ThreadLocal` values are not inherited. However, the `InheritableThreadLocal` variable has the same value as in the parent thread, because `InheritableThreadLocal` values are inherited by child threads.

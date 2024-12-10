@@ -1,0 +1,16 @@
+list of Programs:
+
+
+identify the Program :
+    if there is multiple ans dependent on the condition how to partition the problem
+    for example : the {} decides the result in the mathematical expression
+                  the boolean algebra
+                  palindrome partitioning
+                  partition Array
+                  Count Square
+    solve :
+        start entire block
+        try all partition
+            run loop to try all partition
+        return best possible of two partition
+            i -> k and k + 1 -> j

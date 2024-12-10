@@ -1,0 +1,43 @@
+
+Data structure and algorithm
+
+1. Graph Creation
+2. Graph Traversal
+	a. BFS --> Queue + Visited
+	b. DFS --> Stack (Recursion) + Visited
+3. Cycle Detection
+	a. Undirected
+		i.  BFS --> Queue (Parent) + Visited
+		ii. DFS --> Stack (Recursion + Parent) + Visited
+
+5. Topological Sort
+	DFS --> Stack( stores visited elements with no neighbours )+ Visited
+	BFS (kahns Algorithm) --> Queue + In-degree Array
+
+6. Cycle Detection Directed Graph
+		i.  BFS --> Queue (Parent) + Visited --> In-degree Array
+		ii. DFS --> Stack (Recursion + Parent) + Visited + PathVisited
+4. Bipartite Graph
+		a. BFS --> Queue + Visited stores color of node (0,1) , if color of adjacent node is same then it is not bipartite graph
+		b. DFS --> Stack (Recursion) + Visited stores color of node (0,1) , if color of adjacent node is same then it is not bipartite graph
+
+
+6. Dijkstra's Algorithm
+	a. Priority Queue
+	b. Using Set
+
+
+7. BellMan ford algorithm
+8. Floyd Algorithm
+9. Minimum Spanning Tree
+	Prims
+	Kruskal
+10. DSU (Disjoint Set Union)
+11. Strongly connected Component (Kosaraju)
+12. Bridges in Graph (Tarjans)
+13. Articulation Point
+
+
+
+
+
