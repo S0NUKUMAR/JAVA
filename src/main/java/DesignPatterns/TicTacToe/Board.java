@@ -1,4 +1,4 @@
-package DesignPatterns.TikTacToe;
+package DesignPatterns.TicTacToe;
 
 public class Board {
     public int totalMoves ;
@@ -38,53 +38,30 @@ public class Board {
         System.out.println();
     }
 
-    public boolean isWinner(){
-        return checkRow() || checkColumn() || checkDiagonal();
-    }
-
-    private boolean checkRow(){
-        for (char[] chars : grid) {
-            if (chars[0] != '-' && chars[0] == chars[1] && chars[1] == chars[2]) {
+    public boolean isWinner() {
+        // Check rows
+        for (int row = 0; row < 3; row++) {
+            if (grid[row][0] != '-' && grid[row][0] == grid[row][1] && grid[row][1] == grid[row][2]) {
                 return true;
             }
         }
-        return false;
-    }
 
-    private boolean checkColumn(){
-        for(int i=0; i< grid.length;i++){
-            if(grid[0][i]!='-' && grid[0][i] == grid[1][i] && grid[1][i] == grid[2][i]){
+        // Check columns
+        for (int col = 0; col < 3; col++) {
+            if (grid[0][col] != '-' && grid[0][col] == grid[1][col] && grid[1][col] == grid[2][col]) {
                 return true;
             }
         }
-        return false;
-    }
 
-    private boolean checkDiagonal(){
-        return checkLeftDiagonal() || checkRightDiagonal();
-    }
-
-    private boolean checkLeftDiagonal(){
-        for(int i=0; i< grid.length;i++){
-            if(grid[i][i]!='-' && grid[i][i] != grid[0][0]){
-                return true;
-            }
+        // Check diagonals
+        if (grid[0][0] != '-' && grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) {
+            return true;
         }
-        return false;
+        return grid[0][2] != '-' && grid[0][2] == grid[1][1] && grid[1][1] == grid[2][0];
     }
-
-    private boolean checkRightDiagonal(){
-        for(int i=0; i< grid.length;i++){
-            if(grid[i][grid.length-i-1]!='-' && grid[i][grid.length-i-1] != grid[0][grid.length-1]){
-                return true;
-            }
-        }
-        return false;
-    }
-
 
     private boolean checkValidMove(int x , int y , char symbol){
-        return this.grid[x][y]=='-' && x >= 0 && y >= 0 && x < grid.length && y < grid[0].length;
+        return this.grid[x][y] == '-' && y >= 0 && x < grid.length && y < grid[0].length;
     }
 
     public void makeMove(int x , int y , char symbol){
