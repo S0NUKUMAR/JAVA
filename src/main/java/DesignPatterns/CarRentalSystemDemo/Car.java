@@ -9,7 +9,6 @@ public class Car {
 
     private boolean available;
 
-
     public Car(String make, String model, int year, String licensePlate, double rentalPricePerDay) {
         this.make = make;
         this.model = model;

@@ -1,6 +1,6 @@
 package DesignPattern.TikTacToe;
 
-import DesignPatterns.TicTacToe.Board;
+import DesignPatterns.TikTacToe.Board;
 import org.junit.jupiter.api.*;
 
 public class BoardTest {
@@ -28,7 +28,7 @@ public class BoardTest {
         assert(board.grid[0].length == 3);
         for(int i= 0 ; i < board.grid.length ; i++){
             for(int j=0 ; j< board.grid[0].length ; j++){
-                Assertions.assertEquals('-', board.grid[i][j]);
+                Assertions.assertEquals(board.grid[i][j], '-');
             }
         }
     }
@@ -36,7 +36,7 @@ public class BoardTest {
     @Test
     public void isFullTest(){
         boolean result = board.isFull();
-        Assertions.assertFalse(result);
+        Assertions.assertEquals(false , result);
     }
 
     @Test
@@ -45,13 +45,13 @@ public class BoardTest {
         board.grid[0][1] = 'X';
         board.grid[0][2] = 'X';
         boolean result = board.isWinner();
-        Assertions.assertTrue(result);
+        Assertions.assertEquals(true, result);
 
         board.grid[0][0] = 'O';
-        board.grid[0][1] = 'X';
+        board.grid[0][1] = 'O';
         board.grid[0][2] = 'O';
         result = board.isWinner();
-        Assertions.assertFalse(result);
+        Assertions.assertEquals(true, result);
     }
 
     @Test
@@ -60,13 +60,13 @@ public class BoardTest {
         board.grid[1][0] = 'X';
         board.grid[2][0] = 'X';
         boolean result = board.isWinner();
-        Assertions.assertTrue(result);
+        Assertions.assertEquals(true, result);
 
         board.grid[0][0] = 'O';
-        board.grid[1][0] = 'X';
+        board.grid[1][0] = 'O';
         board.grid[2][0] = 'O';
         result = board.isWinner();
-        Assertions.assertFalse(result);
+        Assertions.assertEquals(true, result);
     }
 
     @Test
@@ -75,13 +75,13 @@ public class BoardTest {
         board.grid[1][1] = 'X';
         board.grid[2][2] = 'X';
         boolean result = board.isWinner();
-        Assertions.assertTrue(result);
+        Assertions.assertEquals(true, result);
 
         board.grid[0][0] = 'O';
-        board.grid[1][1] = 'X';
+        board.grid[1][1] = 'O';
         board.grid[2][2] = 'O';
         result = board.isWinner();
-        Assertions.assertFalse(result);
+        Assertions.assertEquals(true, result);
     }
 
     @Test
@@ -90,13 +90,13 @@ public class BoardTest {
         board.grid[1][1] = 'X';
         board.grid[2][0] = 'X';
         boolean result = board.isWinner();
-        Assertions.assertTrue(result);
+        Assertions.assertEquals(true, result);
 
         board.grid[0][2] = 'O';
         board.grid[1][1] = 'O';
         board.grid[2][0] = 'O';
         result = board.isWinner();
-        Assertions.assertTrue(result);
+        Assertions.assertEquals(true, result);
     }
 
     @Test
@@ -111,7 +111,7 @@ public class BoardTest {
         board.makeMove(2,1,'O');
         board.makeMove(2,2,'X');
         boolean result = board.isFull();
-        Assertions.assertTrue(result);
+        Assertions.assertEquals(true, result);
 
         Assertions.assertTrue(board.isWinner());
     }

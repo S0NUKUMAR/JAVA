@@ -250,7 +250,6 @@ public class StreamExample {
             new Student(10, "Shubham", "Pandey", 26, "Male", "Instrumentation Engineering", 2017, "Mumbai", 98));
 
     public static void main(String[] args) {
-
         //1- Find list of students whose first name starts with alphabet A
         StreamExample streamExample = new StreamExample();
         List <Student> students = streamExample.list.stream().filter(s-> s.getFirstName().startsWith("A")).collect(Collectors.toList());

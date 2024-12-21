@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3f2724d-c26a-4f96-81ea-62cc69949f1e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignPatterns/StandardProblems/OberserverPatternDemo/ConcreteObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignPatterns/StandardProblems/OberserverPatternDemo/ConcreteSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignPatterns/StandardProblems/OberserverPatternDemo/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignPatterns/StandardProblems/OberserverPatternDemo/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignPatterns/StandardProblems/StrategyPatternDemo/CreditCardStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignPatterns/StandardProblems/StrategyPatternDemo/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignPatterns/StandardProblems/StrategyPatternDemo/PaymentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignPatterns/StandardProblems/StrategyPatternDemo/PaypalStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignPatterns/StandardProblems/StrategyPatternDemo/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignPatterns/StandardProblems/StrategyPatternDemo/StrategyPatternExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/CarRentalSystemDemo/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DesignPatterns/CarRentalSystemDemo/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/CarRentalSystemDemo/CarRentalSystemDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DesignPatterns/CarRentalSystemDemo/CarRentalSystemDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/ObserverPatternExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DesignPatterns/StandardProblems/OberserverPatternDemo/ObserverPatternExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/StrategyPatternExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/TicTacToe/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DesignPatterns/TicTacToe/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Array/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Array/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Array/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Array/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/BinarySearch/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/BinarySearch/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/BinarySearch/BookAllocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/BinarySearch/BookAllocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/BinarySearch/FindSquareRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/BinarySearch/FindSquareRoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/BinarySearch/OddOccurringElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/BinarySearch/OddOccurringElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/BinarySearch/SmallestMissingNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/BinarySearch/SmallestMissingNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/BinarySearch/findFirstLastIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/BinarySearch/findFirstLastIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/BinarySearch/findNoOfRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/BinarySearch/findNoOfRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/BinaryTree/BTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/BinaryTree/BTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/BinaryTree/BalancedTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/BinaryTree/BalancedTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/BinaryTree/DepthOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/BinaryTree/DepthOfBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/BinaryTree/Traversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/BinaryTree/Traversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/BinaryTree/TwoIdenticalTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/BinaryTree/TwoIdenticalTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/BinaryTree/ViewTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/BinaryTree/ViewTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Bitmanipulations/BitCheatsheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Bitmanipulations/BitCheatsheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Bitmanipulations/CountSetBit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Bitmanipulations/CountSetBit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/CoinChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/CoinChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/LongestCommonSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/LongestCommonSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/PartitionProblems/BooleanExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/PartitionProblems/BooleanExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/PartitionProblems/MatrixChainMultiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/PartitionProblems/MatrixChainMultiplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/PartitionProblems/PalindromePartitioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/PartitionProblems/PalindromePartitioning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/PartitionProblems/listOfProgram" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/PartitionProblems/listOfProgram" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/RodCuttingProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/RodCuttingProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/TargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/TargetSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/UnboundedKnapSack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/DynamicProgramming/UnboundedKnapSack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/BellmanFord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/BellmanFord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/BipartiteGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/BipartiteGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/ConnectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/ConnectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/CycleDirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/CycleDirectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/CycleInGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/CycleInGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/DijkstrasAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/DijkstrasAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/DisjointSetUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/DisjointSetUnion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/FloydWarshall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/FloydWarshall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/GraphCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/GraphCreation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/KahnAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/KahnAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/KruskalAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/KruskalAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/Menu" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/Menu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/PrimsAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/PrimsAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/ShortestPathDirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/ShortestPathDirectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/ShortestPathUndirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/ShortestPathUndirectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/StronglyConnectedComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/StronglyConnectedComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/TopologicalSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/TopologicalSorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/Traversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Graph/Traversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Recursion/NQueenProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Recursion/NQueenProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Recursion/PalindromePartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Recursion/PalindromePartition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Recursion/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Recursion/Permutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Recursion/PrintSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Recursion/PrintSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Recursion/RatInMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Recursion/RatInMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Recursion/SubsequenceSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Recursion/SubsequenceSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/Trie/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/Trie/Trie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/AddOneLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/AddOneLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/AdditionOfTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/AdditionOfTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/DetectCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/DetectCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/IntersectionOfLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/IntersectionOfLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/MergeSortLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/MergeSortLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/MiddleNodeLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/MiddleNodeLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/RemoveDuplicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/RemoveDuplicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/ReverseKLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/ReverseKLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/ReverseLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/ReverseLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/isPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataStructure/linkedlist/isPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/JavaCollection/ListExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/JavaCollection/ListExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/JavaCollection/MapExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/JavaCollection/MapExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/JavaCollection/QueueImplementations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/JavaCollection/QueueImplementations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/JavaCollection/SetExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/JavaCollection/SetExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/JavaCollection/StackExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/JavaCollection/StackExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/javaStream/StreamExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/javaStream/StreamExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/JavaThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/JavaThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/JavaYield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/JavaYield.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/ProducerConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/ProducerConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/ReentrantLock/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/ReentrantLock/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/ReentrantLock/NotesReentrant.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/ReentrantLock/NotesReentrant.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/SemaphoreExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/SemaphoreExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/Synchronization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/Synchronization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/ThreadPool/ThreadPoolNotes" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/multithreading/ThreadPool/ThreadPoolNotes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/others/JacksonExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/others/JacksonExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/others/JavaComparableExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/others/JavaComparableExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/others/JavaComparatorExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/others/JavaComparatorExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/others/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/others/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javalearning/others/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javalearning/others/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DesignPattern/TikTacToe/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DesignPattern/TikTacToe/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DesignPattern/TikTacToe/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DesignPattern/TikTacToe/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataStructure/Array/QuickSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dataStructure/Array/QuickSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataStructure/Graph/DijkstrasAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dataStructure/Graph/DijkstrasAlgorithmTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataStructure/Graph/StronglyConnectedComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dataStructure/Graph/StronglyConnectedComponentTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2bA858TeuALgCRD8lU5IMARNU8E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.ObserverPatternExample.executor": "Run",
+    "Application.StrategyPatternExample.executor": "Run",
+    "Maven.demoJava [clean].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "//wsl.localhost/Ubuntu-22.04/home/sonukumar/personalSpace/demoJava/src/main/java/DesignPatterns/StandardProblems",
+    "onboarding.tips.debug.path": "C:/Users/sksingh/Desktop/demoJava/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="LLDesign.OlaUber.Trip" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubuntu-22.04\home\sonukumar\personalSpace\demoJava\src\main\java\DesignPatterns\StandardProblems" />
+      <recent name="C:\Users\sksingh\Desktop\demoJava\src\main\java\LLDesign\OlaUber" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sksingh\Desktop\demoJava\src\main\java\javalearning\multithreading\ReentrantLock" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="DesignPatterns.StandardProblems" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="dataStructure.Graph" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="dataStructure.Graph" />
+      <recent name="dataStructure.Array" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.StrategyPatternExample">
+    <configuration name="ObserverPatternExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DesignPatterns.StandardProblems.OberserverPatternDemo.ObserverPatternExample" />
+      <module name="demoJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DesignPatterns.StandardProblems.OberserverPatternDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StrategyPatternExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DesignPatterns.StandardProblems.StrategyPatternDemo.StrategyPatternExample" />
+      <module name="demoJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DesignPatterns.StandardProblems.StrategyPatternDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StrategyPatternExample" />
+        <item itemvalue="Application.ObserverPatternExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3f2724d-c26a-4f96-81ea-62cc69949f1e" name="Changes" comment="" />
+      <created>1705646337220</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705646337220</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/javalearning/multithreading/ReentrantLock/Main.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/DesignPattern/TikTacToe/BoardTest.java</url>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/javalearning/javaStream/StreamExample.java</url>
+          <line>253</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/javalearning/multithreading/ReentrantLock/Main.java</url>
+          <line>27</line>
+          <properties class="javalearning.multithreading.ReentrantLock.MyThread" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/demoJava$ObserverPatternExample.ic" NAME="ObserverPatternExample Coverage Results" MODIFIED="1734796721796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>DesignPatterns.StandardProblems.OberserverPatternDemo.*</FILTER>
+    </SUITE>
+  </component>
+</project>
