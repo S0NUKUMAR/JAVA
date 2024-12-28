@@ -23,7 +23,7 @@ public class ShoppingCart {
     }
 
     public void pay(PaymentStrategy paymentStrategy){
-        paymentStrategy.pay((int) getTotalPrice());
+        paymentStrategy.pay(getTotalPrice());
     }
 
 }

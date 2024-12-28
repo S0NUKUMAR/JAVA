@@ -13,7 +13,7 @@ public class CreditCardStrategy implements PaymentStrategy {
         this.expiryDate = expiryDate;
     }
     @Override
-    public void pay(int amount) {
-        System.out.printf("implemented payment method by credit card: %d\n", amount);
+    public void pay(double amount) {
+        System.out.printf("implemented payment method by credit card: %.2f\n", amount);
     }
 }

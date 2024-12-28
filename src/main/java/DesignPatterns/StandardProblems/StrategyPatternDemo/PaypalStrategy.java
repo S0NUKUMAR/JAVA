@@ -11,7 +11,7 @@ public class PaypalStrategy implements PaymentStrategy {
     }
 
     @Override
-    public void pay(int amount) {
-        System.out.printf("implemented the paypal strategy for payment : %d\n", amount);
+    public void pay(double amount) {
+        System.out.printf("implemented the paypal strategy for payment : %.2f\n", amount);
     }
 }
