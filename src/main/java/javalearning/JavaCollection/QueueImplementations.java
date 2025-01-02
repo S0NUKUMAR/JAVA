@@ -1,9 +1,8 @@
 package javalearning.JavaCollection;
 
-import java.util.ArrayDeque;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import javalearning.others.Student;
+
+import java.util.*;
 
 public class QueueImplementations {
     public static void main(String[] args) {
@@ -32,6 +31,12 @@ public class QueueImplementations {
 
         // Displaying elements of PriorityQueue
         System.out.println("PriorityQueue: " + priorityQueue);
+
+        Queue<Student> students = new PriorityQueue<>(Comparator.comparing(Student::name));
+        students.add(new Student(2,"atwo"));
+        students.add(new Student(1 , "one"));
+
+        System.out.println(students);
     }
 }
 
